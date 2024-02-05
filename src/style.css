@@ -1,0 +1,13 @@
+@font-face {
+  font-family: LXGWWenKai;
+  src: url('./assets/LXGWWenKai-Regular.ttf')
+}
+
+@font-face {
+  font-family: FZKai;
+  src: url('./assets/FZKai.ttf')
+}
+
+body {
+  font-family: LXGWWenKai;
+}
