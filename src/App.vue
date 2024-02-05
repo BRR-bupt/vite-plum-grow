@@ -177,7 +177,7 @@ onMounted(() => {
   // step(initalBranch3, 0, 0, 2)
   // step(initalBranch4, 0, 0, 3)
   startFrame()
-  const tl1 = gsap.timeline()
+  const tl1 = gsap.timeline().pause()
   tl1
     .from('#title', {
       yPercent: 100,
@@ -190,6 +190,10 @@ onMounted(() => {
       stagger: 1.4,
       ease: 'power4.out',
     })
+
+  setTimeout(()=>{
+    tl1.play()
+  }, 1000)
 })
 </script>
 
